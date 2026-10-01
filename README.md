@@ -1,0 +1,2 @@
+# MathIN
+Mathematically intelligent navigation
