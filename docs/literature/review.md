@@ -9,9 +9,11 @@
 | ru | en |
 | --- | --- |
 | Большие языковые модели (БЯМ) | Large Language Models (LLM) |
+| Предобученные языковые модели | <span style="color: rgb(15, 17, 21);">Pre-trained Language Models (</span>PLM) |
 | Математические рассуждения | Mathematical Reasoning |
 | Решение сюжетных задач | **Contextualized problems** |
-| Просто вычисления | **Direct mathematical problems** |
+| Задача вычисления (решения) | **Direct mathematical problems** |
+| Математические текстовые задачи | <span style="color: rgb(15, 17, 21);">Math Word Problems</span> |
 
 ### Запросы:
 
@@ -45,7 +47,7 @@ LLM+"Mathematical Reasoning"
 
 | read? | id | Авторы | Название | Год | Ссылка или DOI | Комментарий (1-3 предложений) |
 | --- | --- | --- | --- | --- | --- | --- |
-|  | 2026_Forootani_review | Ali Forootani,<span style="color: rgb(31, 31, 31);"> </span>Danial Esmaeili Aliabadi<span style="color: rgb(31, 31, 31);">, </span>Daniela Thrän | A survey on mathematical reasoning and optimization with large language models | 2025 | 10.1016/j.iswa.2026.200712 | Обзор |
+| V | 2026_Forootani_review | Ali Forootani,<span style="color: rgb(31, 31, 31);"> </span>Danial Esmaeili Aliabadi<span style="color: rgb(31, 31, 31);">, </span>Daniela Thrän | A survey on mathematical reasoning and optimization with large language models | 2025 | 10.1016/j.iswa.2026.200712 | Обзор на 354 источника, рассматриваются модели, классифицируются задачи, выборка наборов данных и анализ проблем (даже для топовых больших языковых моделей) |
 |  |  | Luke Alexander, Eric Leonen, Sophie Szeto and et.al | Semantic Search over 9 Million Mathematical Theorems | 2026 | <https://arxiv.org/pdf/2602.05216> | Математическая теория, очень большой объем |
 |  |  | Guijin Son, Seungyeop Yi, Minju Gwak, Hyunwoo Ko, Wongi Jang, Youngjae Yu | ResearchMath-14K: Scaling Research-Level Mathematics via Agents | 2026 | <http://arxiv.org/abs/2605.28003> | Набор данных |
 |  |  | Fabian Gloeckle, Ahmad Rammal, Charles Arnal, Remi Munos, Vivien Cabannes, Gabriel Synnaeve, Amaury Hayat | Automatic Textbook Formalization | 2026 | <http://arxiv.org/abs/2604.03071> | 30 000 агентов переволят учебник 500 страниц в Lean, 130 строк кода |
@@ -55,6 +57,12 @@ LLM+"Mathematical Reasoning"
 |  |  | Shima Imani, Liang Du, Harsh Shrivastava | MathPrompter: Mathematical Reasoning using Large Language Models | 2023 | <https://aclanthology.org/2023.acl-industry.4.pdf> | Повышение уровня уверености в задачах |
 |  |  | Youliang Yuan, Qiuyang Mang, Jingbang Chen, Hong Wan, Xiaoyuan Liu, Junjielong Xu, Jen-tse Huang, Wenxuan Wang, Wenxiang Jiao, Pinjia He | Curing Miracle Steps in LLM Mathematical Reasoning with Rubric Rewards | 2026 | <https://aclanthology.org/2026.acl-long.844.pdf> | Оценка цепочек рассуждения, а не ответов. Поскольку модель подгоняет под ответ, запомнив его. |
 |  |  | Yuanhe Zhang, Ilja Kuzborskij, Jason D. Lee, Chenlei Leng, Fanghui Liu | DAG-MATH: GRAPH-OF-THOUGHT GUIDED MATHE- MATICAL REASONING IN LLMS | 2026 | <https://arxiv.org/abs/2510.19842> | Набор данных с цепочками размышлений |
+|  |  | Pan Lu , Liang Qiu , Wenhao Yu , Sean Welleck , Kai-Wei Chang | A Survey of Deep Learning for Mathematical Reasoning | 2023 | <https://aclanthology.org/2023.acl-long.817/> | Обзор: глубокое обучение для математического размышлений |
+|  |  | Shuofei Qiao, Yixin Ou1, Ningyu Zhang, Xiang Chen, Yunzhi Yao, Shumin Deng, Chuanqi Tan, Fei Huang, Huajun Chen | Reasoning with Language Model Prompting: A Survey | 2023 | <https://aclanthology.org/2023.acl-long.294/> | Обзор: общие механизмы размышлений |
+|  |  | Zheng Chu, Jingchang Chen, Qianglong Chen, Weijiang Yu, Tao He, Haotian Wang, Weihua Peng, Ming Liu, Bing Qin, Ting Liu | A Survey of Chain of Thought Reasoning: Advances, Frontiers and Future | 2024 | <https://arxiv.org/abs/2309.15402> | Обзор: цепочки мыслей |
+|  |  | Xipeng Qiu , Tianxiang Sun, Yige Xu, Yunfan Shao, Ning Dai, Xuanjing Huang | Pre-trained Models for Natural Language Processing: A Survey | 2021 | <https://arxiv.org/abs/2003.08271> | Обзор: предварительно предобученные языковые модели |
+|  |  | W. X. Zhao, K. Zhou, J. Li, T. Tang, X. Wang, Y. Hou, Y. Min, B. Zhang, J. Zhang, Z. Dong, et al.,  | A survey of large language models | 2026 | <https://arxiv.org/abs/2303.18223> | Обзор: предварительно обученные большие языковые модели |
+|  |  | Y. Yan, J. Su, J. He, F. Fu, X. Zheng, Y. Lyu, K. Wang, S. Wang, Q. Wen, X. Hu,  | A survey of mathematical reasoning in the era of multimodal large language model: Benchmark, method & challenges | 2024 | <https://arxiv.org/abs/2412.11936> |  |
 
 ### Реестр программ
 
@@ -68,3 +76,27 @@ LLM+"Mathematical Reasoning"
 | Решение (и ссылка) | Умеет работать с коллекциями документов | Способ извлечения из документов | Поддержка языков типа Lean (какой) | Наличие поиска | Наличие редактора и ввода | Наличие возможности выдвижения гипотез | Автоматическая проверка доказательств | Поддержка ДУЧП и ОУ | Работа с поисковиком | Наличие возможности консультации | Распознавание математических формул |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  |  |  |  |  |  |  |  |  |  |  |  |
+
+### Таксономия задач
+
+1. Вычисления
+   1. 
+2. Рассуждения
+
+### **Реестр моделей**
+
+| Название | Тип | Описание | Комментарий | Ссылка |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| GenBERT | PLM |  |  |  |  |  |
+| NF-NSM | PLM |  |  |  |  |  |
+| MathBERT | PLM |  |  |  |  |  |
+| LISA | PLM |  |  |  |  |  |
+| <span style="color: rgb(15, 17, 21);">LLEMMA</span> | LLM |  |  |  |  |  |
+| <span style="color: rgb(15, 17, 21);">Qwen-Math</span> | LLM |  |  |  |  |  |
+| <span style="color: rgb(15, 17, 21);">InternLM-Math</span> | LLM |  |  |  |  |  |
+| <span style="color: rgb(15, 17, 21);">o1, o3</span> | LLM |  |  |  |  |  |
+| <span style="color: rgb(15, 17, 21);">MathPrompter</span> |  |  | <span style="color: rgb(15, 17, 21);">использует GPT-3 DaVinci для решения математических текстовых задач и демонстрирует способность LLM не только объяснять, но и генерировать сложные математические рассуждения</span> |  |  |  |
+| <span style="color: rgb(15, 17, 21);">MetaMath</span> |  |  | <span style="color: rgb(15, 17, 21);">предлагает парадигму, в которой LLM сама генерирует математические задачи, создавая самоподдерживающуюся среду обучения для постоянного улучшения решения задач</span> |  |  |  |
+| <span style="color: rgb(15, 17, 21);">WizardMath</span> |  |  | <span style="color: rgb(15, 17, 21);">повышает способности LLM к математическим рассуждениям через усиление эволюционных инструкций, делая шаг к автономному самосовершенствованию модели</span> |  |  |  |
+| ASTactic |  |  | <span style="color: rgb(15, 17, 21);">модель, способная автономно генерировать стратегии доказательства теорем</span> |  |  |  |
+| GPT-f |  |  | <span style="color: rgb(15, 17, 21);">языковая модель на основе Transformer для автоматического доказательства теорем; некоторые её доказательства были формально признаны математическим сообществом</span> |  |  |  |
