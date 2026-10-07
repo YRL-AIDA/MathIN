@@ -2,7 +2,43 @@
 
 Исследовать возможности, ограничения, риски AI в работе с математической литературой.
 
-Рекомендуемые системы для поиска: Google Scholar, Chat DeepSeek, а также встроенный поиск в
+Рекомендуемые системы для поиска: Google Scholar, Chat DeepSeek, а также встроенный поиск
+
+Репозитории с исследованиями:
+
+<https://github.com/handsome-rich/Awesome-Auto-Research-Tools#1>
+
+# Вопросы:
+
+- [ ] Какие системы есть для автоматических проведений исследований?
+
+- [ ] Можно ли использовать такие системы для математических исследований?
+
+- [ ] Как представить математическое знание?
+
+- [ ] Чем так интересны языки типа Lean в вопросах автоматизации исследований
+
+- [ ] Если представлять математическое знание в виде графа, то что есть узел (какие они бывают), что есть связь (какие они бывают)?
+
+- [ ] Как извлекать знания из документов?
+
+- [ ] Есть ли специальные форматы, которые позволят хранить такие данные?
+
+- [ ] Как распознать формулу из документа?
+
+- [ ] Дорого ли использовать LLM для чтения статей?
+
+- [ ] Как писать промпты и как должны выглядить навыки для такой работы?
+
+- [ ] Какой вид более удобный для представления проекта: навык, утилита или приложение?
+
+- [ ] Что будет с моделью, если ей дать неизвестную или плохо известную область (например, Нелокальные формулы улучшения в задачах ОУ?)
+
+- [ ] Как долго система будет проводить исследование?
+
+- [ ] Какие этапы являются самыми сложными для LLM?
+
+- [ ] 
 
 ## Ключевые слова и термины:
 
@@ -53,7 +89,8 @@ LLM+"Mathematical Reasoning"
 | read? | id | Авторы | Название | Год | Ссылка или DOI | Комментарий (1-3 предложений) |
 | --- | --- | --- | --- | --- | --- | --- |
 | V | 2026_Forootani_review | Ali Forootani,<span style="color: rgb(31, 31, 31);"> </span>Danial Esmaeili Aliabadi<span style="color: rgb(31, 31, 31);">, </span>Daniela Thrän | A survey on mathematical reasoning and optimization with large language models | 2025 | 10.1016/j.iswa.2026.200712 | Обзор на 354 источника, рассматриваются модели, классифицируются задачи, выборка наборов данных и анализ проблем (даже для топовых больших языковых моделей) |
-| V | 2025_Liu_review.md | Wentao Liu, Hanglei Hu, Jie Zhou, Yuyang Ding, Junsong Li, Jiayi Zeng, Mengliang He, Qin Chen, Bo Jiang, Aimin Zhou, Liang He | Mathematical Language Models: A Survey | 2025 | <https://dl.acm.org/doi/10.1145/3773985> | Обзор |
+| V | 2025_Liu_review.md | Wentao Liu, Hanglei Hu, Jie Zhou, Yuyang Ding, Junsong Li, Jiayi Zeng, Mengliang He, Qin Chen, Bo Jiang, Aimin Zhou, Liang He | Mathematical Language Models: A Survey | 2025 | <https://dl.acm.org/doi/10.1145/3773985> | Обзор, акцент на PLM и LLM подходы |
+| V | 2026_Zhang_DAG-Math.md | Zhang, Y., Kuzborskij, I., Lee, J. D., Leng, C., & Liu, F. | DAG-MATH: GRAPH-OF-THOUGHT GUIDED MATHE- MATICAL REASONING IN LLMS | 2026 |  | <span style="color: rgb(15, 17, 21);">Работа предлагает DAG-MATH — моделирование CoT как DAG с метриками logical closeness и perfect reasoning; PASS@1 завышает реальную способность рассуждать.</span> |
 |  |  | Luke Alexander, Eric Leonen, Sophie Szeto and et.al | Semantic Search over 9 Million Mathematical Theorems | 2026 | <https://arxiv.org/pdf/2602.05216> | Математическая теория, очень большой объем |
 |  |  | Guijin Son, Seungyeop Yi, Minju Gwak, Hyunwoo Ko, Wongi Jang, Youngjae Yu | ResearchMath-14K: Scaling Research-Level Mathematics via Agents | 2026 | <http://arxiv.org/abs/2605.28003> | Набор данных |
 |  |  | Fabian Gloeckle, Ahmad Rammal, Charles Arnal, Remi Munos, Vivien Cabannes, Gabriel Synnaeve, Amaury Hayat | Automatic Textbook Formalization | 2026 | <http://arxiv.org/abs/2604.03071> | 30 000 агентов переводят учебник 500 страниц в Lean, 130 строк кода |
@@ -70,6 +107,9 @@ LLM+"Mathematical Reasoning"
 |  |  | Y. Yan, J. Su, J. He, F. Fu, X. Zheng, Y. Lyu, K. Wang, S. Wang, Q. Wen, X. Hu, | A survey of mathematical reasoning in the era of multimodal large language model: Benchmark, method & challenges | 2024 | <https://arxiv.org/abs/2412.11936> |  |
 |  |  | Yuhuai Wu, Markus Rabe, Wenda Li, Jimmy Ba, Roger Grosse, Christian Szegedy | LIME: Learning Inductive Bias for Primitives of Mathematical Reasoning | 2021 | <https://arxiv.org/abs/2101.06223> | Понимание ИИ индукции, дедукции и абдукции |
 |  |  | Can Xu, Qingfeng Sun, Kai Zheng, Xiubo Geng, Pu Zhao, Jiazhan Feng, Chongyang Tao, Qingwei Lin, Daxin Jiang | WizardLM: Empowering large pre-trained language models to follow complex instructions | 2025 | <https://arxiv.org/abs/2304.12244> | <span style="color: rgb(15, 17, 21);">подход к созданию инструкций для LLM по простым</span> |
+|  |  | Shai Shalev-Shwartz, Amnon Shashua | From Reasoning to Super-Intelligence: A Search-Theoretic Perspective | 2025 | <https://arxiv.org/abs/2507.15865> | Diligent Learner |
+|  |  | <span style="color: rgb(45, 55, 72);">Ben Prystawski, Michael Li, Noah Goodman</span> | Why think step by step? Reasoning emerges from the locality of experience | 2023 | <https://doi.org/10.52202/075280-3107> |  |
+|  |  | Tian Ye, Zicheng Xu \~Zicheng_Xu1 , Yuanzhi Li, Zeyuan Allen-Zhu | Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process | 2025 | <https://openreview.net/forum?id=Tn5B6Udq3E> |  |
 
 ### Реестр программ
 
@@ -82,6 +122,11 @@ LLM+"Mathematical Reasoning"
 
 | Решение (и ссылка) | Умеет работать с коллекциями документов | Способ извлечения из документов | Поддержка языков типа Lean (какой) | Наличие поиска | Наличие редактора и ввода | Наличие возможности выдвижения гипотез | Автоматическая проверка доказательств | Поддержка ДУЧП и ОУ | Работа с поисковиком | Наличие возможности консультации | Распознавание математических формул |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| <https://github.com/SakanaAI/AI-Scientist> |  |  |  |  |  |  |  |  |  |  |  |
+| <https://github.com/microsoft/RD-Agent> |  |  |  |  |  |  |  |  |  |  |  |
+| <https://github.com/aiming-lab/AutoResearchClaw> |  |  |  |  |  |  |  |  |  |  |  |
+| <https://github.com/EvoScientist/EvoScientist> |  |  |  |  |  |  |  |  |  |  |  |
+| <https://deerflow.tech/demo/threads/fe3f7974-1bcb-4a01-a950-79673baafefd/user-data/outputs/index.html?download=true> |  |  |  |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |  |  |  |  |
 
 ### Таксономия задач
